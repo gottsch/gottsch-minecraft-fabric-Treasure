@@ -26,6 +26,9 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	modImplementation "gottsch:GottschCore-1.19.2:2.2.0"
+	modImplementation ("curse.maven:jade-324717:4328558")
 }
 
 processResources {
