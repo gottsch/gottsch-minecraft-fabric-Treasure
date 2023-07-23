@@ -3,27 +3,32 @@
   "id": "modid",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Treasure2",
+  "description": "Adds new chests filled with loot to be discovered.",
   "authors": [
-    "Me!"
+    "gottsch"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/treasure2",
+    "sources": "https://github.com/gottsch/gottsch-minecraft-Treasure"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "LGPL-3.0-or-later",
+  "icon": "assets/treasure2/treasure2-curseforge-logo.png",
 
   "environment": "*",
   "entrypoints": {
+    "fabric-datagen": [
+      "mod.gottsch.fabric.treasure2.datagen.DataGeneration"
+    ],
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "mod.gottsch.fabric.treasure2.core.Treasure"
+    ],
+    "client": [
+      "mod.gottsch.fabric.treasure2.core.setup.ClientSetup"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
   ],
 
   "depends": {

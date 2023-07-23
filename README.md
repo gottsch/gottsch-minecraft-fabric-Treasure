@@ -1,4 +1,4 @@
-# Fabric Example Mod
+# Treasure2 Mod
 
 ## Setup
 
